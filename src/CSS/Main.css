@@ -1,0 +1,357 @@
+.backgroundMain {
+    height: auto;
+    width: auto;
+    background-size: 300% 300%;
+    background: linear-gradient(23deg, #a71738, #8d213a, #af072e);
+    display: flex;
+    flex-direction: column;
+}
+
+#titleText {
+    font-size: 140px;
+}
+
+#profilePictureBox {
+    height: 250px;
+    width: 250px;
+    border: 3px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    user-select: none;
+}
+
+#profilePicture {
+    width: 100%;
+    height: 100%;
+}
+
+#logButton {
+    width: 65px;
+    height: 60px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    left: 0;
+    top: 5%;
+    background-color: white;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.divLine {
+    margin-top: 20px;
+    height: 1px;
+    width: 50%;
+    background: linear-gradient(90deg, rgba(129, 2, 2, 0.01), white, rgba(129, 2, 2, 0.01));
+}
+
+.divLine2 {
+    margin-top: 20px;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(129, 2, 2, 0.01), white, rgba(129, 2, 2, 0.01));
+}
+
+.bookBox {
+    border: 3px solid white;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    display: flex;
+    min-height: 90px;
+    height: auto;
+    position: relative;
+}
+
+#bookRedirectIconBox {
+    right: 1%;
+    width: 20%;
+}
+
+.bookBox:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#bookPictureBox {
+    height: 76px;
+    width: 76px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#bookPicture {
+    width: 100%;
+    height: 100%;
+}
+
+.btna {
+    margin-top: 30px;
+    padding: 1.2em 3.8em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #9F1C3A;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #fff;
+    font-weight: bolder;
+   }
+   
+   .btna:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #9F1C3A;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+   }
+   
+   .btna:hover {
+    background-color: #c900ae;
+    color: #fff;
+   }
+   
+   .btna:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+   }
+   
+   .btna:active {
+    transform: scale(0.9);
+   }
+
+   .boxReadMore {
+    transition: max-height 0.5s ease-out;
+    background-color: #f1f1f1;
+    height: 200px;
+   }
+
+   .readMoreClass {
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+   }
+
+   .aniClass {
+    animation: faedInMain 2s ease-in-out forwards;
+   }
+
+   #stampWorksDiv {
+    width: 37%;
+   }
+   #bioTextBox {
+    font-size: 17px;
+    width: 60%;
+   }
+   #booksBox {
+    width: 37%;
+   }
+   #bookTitleDiv {
+    width: 70%;
+   }
+   #intoTextDiv {
+    padding-right: 12%;
+    height: 90%;
+   }
+   #conferenceBox {
+    width: 37%;
+   }
+   .nextConfBox {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(42, 15, 15, 0.15);
+    border: 2px solid #fff;
+    padding: 30px;
+    border-radius: 25px;
+   }
+   .nextConfBox div h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+   }
+   .nextConfBox div h5 {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+   }
+   #nextConfDiv {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   #confFillerDiv {
+    width: 60%;
+    height: auto;
+   }
+   .imageSliderImage {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+    background: rgba(42, 15, 15, 0.25);
+   }
+
+@keyframes faedInMain {
+    0% {size: 0; opacity: 0;}
+    100% {size: 1; opacity: 1;}
+}
+
+@keyframes Open {
+    0% {width: 65px}
+    100% {width: 150px}
+}
+
+@keyframes Close {
+    0% {width: 150px}
+    100% {width: 65px}
+}
+
+@keyframes OpenButton {
+    0% {width: 150px; height: 60px; top: 5%;}
+    100% {width: 100%; height: 100%; top: 0%; border-radius: 0px;}
+}
+
+@keyframes readMore {
+    0% {height: 0px;display: none;}
+    100% {height: 1300px; display: flex;}
+}
+
+@keyframes readMoreClose {
+    0% {height: 1300px; display: flex; opacity: 0;} 
+    100% {height: 0px;display: none;opacity: 0;}
+}
+
+@media (max-width: 1800px) and (min-width: 768px){
+    #bookPictureDiv {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #titleText {
+        font-size: 70px;
+    }
+    #conferenceText {
+        font-size: 50px;
+    }
+    #nextWorkText {
+        font-size: 33px;
+    }
+    #stampWorksDiv {
+        width: 80%;
+    }
+    #profileTopBox {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #nameTextTop {
+        margin: 10px;
+        margin-top: 20px;
+        font-size: 45px;
+    }
+    #nameTextMiddle {
+        font-size: 25px;
+    }
+    #bioTextBox {
+        font-size: 16px;
+        width: 80%;
+    }
+    #portfolioBox {
+        margin-top: 40px;
+    }
+    #hiddenElementBox {
+        width: 100%;
+    }
+    #textBoxHidden {
+        margin-top: 40px;
+        width: 80%;
+    }
+    #textBoxHidden ul li {
+        text-align: justify;
+        font-size: 17px;
+    }
+    #textBoxHidden2 {
+        margin-top: 40px;
+        width: 80%;
+    }
+    #textBoxHidden2 ul li {
+        text-align: justify;
+        font-size: 17px;
+    }
+    #textBoxHidden3 {
+        margin-top: 40px;
+        width: 80%;
+    }
+    #textBoxHidden3 ul li {
+        text-align: justify;
+        font-size: 17px;
+    }
+    #portfolioText {
+        font-size: 65px;
+    }
+    #booksBox {
+        width: 80%;
+    }
+    .divLine {
+        width: 90%;
+    }
+    #bookRedirectIconBox {
+        right: 16%;
+    }
+    #bookTitleDiv {
+        display: none;
+    }
+    #intoTextDiv {
+        padding-right: 7%;
+        height: 80%;
+    }
+    #conferenceBox {
+        width: 80%;
+    }
+    .bookBox {
+        flex-direction: column;
+    }
+    #titleBox {
+        width: 100%;
+    }
+    #fillSpaceConf {
+        display: none;
+    }
+    #nextConfDiv {
+        width: 100%;
+    }
+    #confFillerDiv {
+        width: 80%;
+        height: auto;
+    }
+    #sliderBoxMain {
+        display: none;
+    }
+    #sliderBoxMainOvershadow {
+        display: none;
+    }
+    @keyframes readMore {
+        0% {height: 0px;display: none;}
+        100% {height: auto; display: flex;}
+    }
+    @keyframes readMoreClose {
+        0% {height: auto; display: flex; opacity: 0;} 
+        100% {height: 0px;display: none;opacity: 0;}
+    }
+  }
