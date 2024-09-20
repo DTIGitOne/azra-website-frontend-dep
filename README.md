@@ -1,3 +1,3 @@
-# To Start the App use:
+# This is the code for a personal website which i have built
 
-### `npm start`
+# the deployed app: https://adzajlicdedovicazra.netlify.app
